@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>手机端</title>
+    <link href="css/weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_477972_8atr8197wwd8to6r.css">
+</head>
+<style type="text/css">
+    *{
+        padding:0;
+        margin: 0;
+    }
+    ul.pro_classify{
+        width: 100%;height: 30px;
+        list-style: none;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 45px;
+        z-index: 999;
+        background: #ffffff;
+    }
+    ul.pro_classify li{
+        width:16.66%;
+        line-height: 30px;
+        float: left;
+        text-align: center;
+        font-size: 13px;
+    }
+    .active{
+        color: #10aeff;
+    }
+    .pro_weight{
+        float: right;clear: right;margin-right: 45px;
+    }
+    .weui-btn_mini{
+        line-height: 20px;
+    }
+    .weui-media-box__desc{
+        line-height: 22px;
+    }
+    .pro_two,.pro_three,.pro_four,.pro_five,.pro_six{
+        display: none;
+    }
+</style>
+<body >
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!--搜索栏-->
+<div class="page__bd" style="width: 100%;height:45px;position: fixed;top: 0;z-index: 999">
+    <div style="width: 30%;height:45px;float: left;"><img width="100%" height="100%" src="image/vcode.jpg" alt=""></div>
+    <div class="weui-search-bar" id="searchBar" style="width: 70%;height: 100%;float: right;clear: right">
+        <form class="weui-search-bar__form">
+            <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+            </div>
+            <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                <i class="weui-icon-search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+    </div>
+</div>
+<!--商品分类-->
+<ul class="pro_classify">
+    <li class="active">首页</li>
+    <li>男装</li>
+    <li>女装</li>
+    <li>马甲</li>
+    <li>风衣</li>
+    <li>长袖</li>
+</ul>
+<div>
+<div class="weui-panel__bd pro_one" style="margin-top: 75px;margin-bottom: 54px;">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+</div>
+<div class="weui-panel__bd pro_two" style="margin-top: 75px;margin-bottom: 54px;">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+</div>
+<div class="weui-panel__bd pro_three" style="margin-top: 75px;margin-bottom: 54px;">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+</div>
+<div class="weui-panel__bd pro_four" style="margin-top: 75px;margin-bottom: 54px;">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+</div>
+<div class="weui-panel__bd pro_five" style="margin-top: 75px;margin-bottom: 54px;">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+</div>
+<div class="weui-panel__bd pro_six" style="margin-top: 75px;margin-bottom: 54px;">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="image/TSP-A-6-70x105.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <h6 class="weui-media-box__title" style="font-size: 12px">全新广告衫Y-010莫代尔圆领(Y-010)</h6>
+            <p class="weui-media-box__desc"><span>面料：莫代尔</span><span class="pro_weight">重量：200g</span> </p>
+            <p><button class="weui-btn weui-btn_mini weui-btn_warn">加入购物车</button><button style="margin-left: 15px;" class="weui-btn weui-btn_mini weui-btn_primary">立即购买</button></p>
+        </div>
+    </a>
+</div>
+</div>
+<!--点击分类切换-->
+<script type="text/javascript">
+    $(".pro_classify li").click(function(){
+        var num=$(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".weui-panel__bd").eq(num).show().siblings().hide();
+
+    })
+</script>
+
+<!--搜索功能-->
+<script type="text/javascript" class="searchbar js_show">
+    $(function(){
+        var $searchBar = $('#searchBar'),
+            $searchResult = $('#searchResult'),
+            $searchText = $('#searchText'),
+            $searchInput = $('#searchInput'),
+            $searchClear = $('#searchClear'),
+            $searchCancel = $('#searchCancel');
+
+        function hideSearchResult(){
+            $searchResult.hide();
+            $searchInput.val('');
+        }
+        function cancelSearch(){
+            hideSearchResult();
+            $searchBar.removeClass('weui-search-bar_focusing');
+            $searchText.show();
+        }
+
+        $searchText.on('click', function(){
+            $searchBar.addClass('weui-search-bar_focusing');
+            $searchInput.focus();
+        });
+        $searchInput
+            .on('blur', function () {
+                if(!this.value.length) cancelSearch();
+            })
+            .on('input', function(){
+                if(this.value.length) {
+                    $searchResult.show();
+                } else {
+                    $searchResult.hide();
+                }
+            })
+        ;
+        $searchClear.on('click', function(){
+            hideSearchResult();
+            $searchInput.focus();
+        });
+        $searchCancel.on('click', function(){
+            cancelSearch();
+            $searchInput.blur();
+        });
+    });</script>
+
+
+<!--底部导航栏-->
+            <div class="weui-tabbar" style="position: fixed;bottom: 0;">
+                <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+                    <i class="weui-tabbar__icon iconfont icon-fangzi"></i>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2147483647&amp;site=qq&amp;menu=yes" class="weui-tabbar__item ">
+                    <i class="weui-tabbar__icon iconfont icon-qie"></i>
+                    <p class="weui-tabbar__label">联系客服</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <i class="weui-tabbar__icon iconfont icon-xin"></i>
+                    <p class="weui-tabbar__label">我的收藏</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <i class="weui-tabbar__icon iconfont icon-cart"></i>
+                    <p class="weui-tabbar__label">购物车</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <i class="weui-tabbar__icon iconfont icon-ren"></i>
+                    <p class="weui-tabbar__label">个人中心</p>
+                </a>
+            </div>
+            <script type="text/javascript">
+                $(function(){
+                    $('.weui-tabbar__item').on('click', function () {
+                        $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+                    });
+                });
+            </script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+</body>
+</html>
